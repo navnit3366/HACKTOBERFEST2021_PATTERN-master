@@ -36,7 +36,7 @@ sys.stdout.write(' *' + " "*(n*6) + '  *')
 
 if n >= 10:
 	sys.stdout.write(f"\033[{n+n//2+n//3}A")
-	sys.stdout.write(f"\033[10000D")
+	sys.stdout.write("\033[10000D")
 	sys.stdout.write(f"\033[{n+n//3}C|  | +--+ +-- | / ----- +---+ +--+ +--- +--+\n")
 	sys.stdout.write(f"\033[{n+n//3}C|__| |  | |   |/    |   |   | |  | |    |  |\n")
 	sys.stdout.write(f"\033[{n+n//3}C|  | |--| |   |\\    |   |   | |--+ |--- |\\-\n")
