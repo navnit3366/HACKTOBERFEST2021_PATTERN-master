@@ -19,8 +19,7 @@ import urllib.request
 import numpy as np
 
 
-url = input("Enter Url to your Image or Press Enter if you want to use default image\n")
-if(url == ""):
+if((url := input("Enter Url to your Image or Press Enter if you want to use default image\n")) == ""):
     url = 'https://avatars.githubusercontent.com/u/21328143?v=4'
 req = urllib.request.urlopen(url)
 arr = np.asarray(bytearray(req.read()), dtype=np.uint8)
